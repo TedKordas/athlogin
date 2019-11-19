@@ -21,5 +21,7 @@ app.post('/', urlencodedParser, function(req, res) {
     res.render('contact', {qs: req.query});
 });
 
-app.listen(`${PORT}`)
+app.listen((app.get('PORT'), function() {
+    console.log('Server started on: ' + app.get('PORT'));
+}));
 
