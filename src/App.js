@@ -6,7 +6,7 @@ function App() {
     <div className="App">
       <header className="App-header">
       <div id="error"></div>
-      <form id="form"></form>
+      <form id="form" method="POST" action="/startList"></form>
         <div>
           <label for="firstName">First Name:</label>
           <input id="firstName" name="firstName" type="text" required></input>
