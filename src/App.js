@@ -1,11 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+      <div id="error"></div>
       <form id="form" action="/" method="GET"></form>
         <div>
           <label for="firstName">First Name:</label>
