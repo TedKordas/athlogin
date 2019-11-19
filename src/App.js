@@ -31,6 +31,9 @@ function App() {
           <label for="time">Time</label>
           <input id="time" name="time" type="time"></input>
         </div>
+        <div>
+          <input id="submit" name="submit" type="submit"></input>
+        </div>
       </header>
     </div>
   );
