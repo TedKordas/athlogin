@@ -2,7 +2,7 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var app = express();
 
-const PORT = 3000;
+const PORT = 4000;
 
 
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
@@ -16,12 +16,8 @@ app.get('/', function(req, res) {
 });
 
 app.post('/', urlencodedParser, function(req, res) {
-    var fistName = req.body.firstName;
     console.log(req.body);
-    res.render('contact', {qs: req.query});
 });
 
-app.listen((app.get('PORT'), function() {
-    console.log('Server started on: ' + app.get('PORT'));
-}));
+app.listen(PORT, () => console.log(`App listening on port ${PORT}`))
 
