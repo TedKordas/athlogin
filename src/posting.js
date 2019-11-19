@@ -10,6 +10,7 @@ app.get('/', function(req, res) {
 });
 
 app.post('/startList', urlencodedParser, function(req, res) {
+    console.log(req.body);
     res.render('contact', {qs: req.query});
 });
 
