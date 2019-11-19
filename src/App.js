@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <form id="form" method="POST" action="/">
+        <form id="form" method="POST" action="/tower">
           <div>
             <label htmlFor="firstName">First Name:</label>
             <input id="firstName" name="firstName" type="text" required></input>
