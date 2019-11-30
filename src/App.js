@@ -32,6 +32,14 @@ class App extends Component {
       })
   }
 
+  // <script>
+  //   window.dataLayer = window.dataLayer || [];
+  //   function gtag(){dataLayer.push(arguments);}
+  //   gtag('js', new Date());
+
+  //   gtag('config', 'UA-119106167-1');
+  // </script>
+
   render() {
     const {firstName, lastName, coach, sledType, date, time, runs } = this.state
     return (
@@ -57,6 +65,7 @@ class App extends Component {
               </select>
             </div>
             <div>
+              {/* <span id="currentdate"></span> */}
               <label htmlFor="date">Date:</label>
               <input id="date" name="date" type="date" value={date} onChange={this.changeHandler} required></input>
             </div>
